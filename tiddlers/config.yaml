@@ -18,5 +18,7 @@
   text: Home
 - title: $:/palette
   text: $:/palettes/GruvboxDark
+- title: $:/SiteTitle
+  text: My TiddlyWiki
 - title: $:/themes/tiddlywiki/vanilla/options/codewrapping
   text: pre

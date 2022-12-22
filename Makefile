@@ -20,6 +20,7 @@ endef
 
 define config_tiddlers
   $$:/DefaultTiddlers
+  $$:/SiteTitle
   $$:/palette
   $$:/themes/tiddlywiki/vanilla/options/codewrapping
 
