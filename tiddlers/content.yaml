@@ -68,24 +68,25 @@
   description: Adds clickable tag links above the title in view mode
   code-body: "yes"
 - text: |-
-    MPTW5 is created by [[Simon Baird|http://simonbaird.com/]] and is the spiritual successor to [[MPTW|http://mptw.tiddlyspot.com/]]. Right now it's mostly a way to demonstrate the new [[templates feature|https://tiddlyhost.com/hub?t=1]] on [[Tiddlyhost|https://tiddlyhost.com]], but I'll probably keep it going as a way to share my preferred TiddlyWiki setup.
+    MPTW5 is created and maintained by [[Simon Baird|http://simonbaird.com/]] and is the spiritual successor to [[MPTW|http://mptw.tiddlyspot.com/]]. It began as a way to demonstrate the new [[templates feature|https://tiddlyhost.com/hub?t=1]] on [[Tiddlyhost|https://tiddlyhost.com]], but now it has its own life as a way to share my preferred TiddlyWiki setup.
 
-    The tagging list below shows the main customizations.
+    The "Tagging" list below shows a list of the substantial customizations, and serves as a quick demo of how MPTW5 works. Notice each tiddler in that list is tagged with "About MPTW5", which is what makes it appear there.
 
-    I've also disabled CamelCase linking, changed the palette and selected my preferred tools and toolbar items. You can adjust this configuration to suit your own preference in the [[ControlPanel|$:/ControlPanel]]. See also [[GettingStarted]] for some other basic configuration options.
+    As well as the layout customizations there are some config changes, in particular to disable CamelCase linking, select my preferred tools, toolbar items, and palette. You can adjust this configuration to suit your own preference in the [[ControlPanel|$:/ControlPanel]]. See also [[GettingStarted]] for some other basic configuration options.
 
-    One thing I do recommend is to keep the "new here" button in your Tiddler view toolbar. The concept of MPTW5 is that tagging lists can help you maintain your tiddlers in a tag-based hierarchical structure. This makes the new here button work as a kind of "create child page" function.
+    One thing I do recommend is to keep the "new here" button in your Tiddler view toolbar. The main idea behind MPTW5 is that tagging lists help you maintain your content in an easy to navigate, hierarchical structure based on tags. This makes the "new here" button work as a kind of "create child page" function.
 
-    (If you do use this template for your own TiddlyWiki feel free to delete this tiddler.)
+    (If you use this template for your own TiddlyWiki feel free to delete this tiddler.)
 
     !! Changelog
 
-    * Nov 24, 2022 - Rainbow title styles
-    * Nov 21, 2022 - Don't remember sidebar tab state when saving.
-    * Nov 20, 2022 - Show description in the tagging list, hide the default tag buttons.
-    * Nov 19, 2022 - Created first version to help demo [[templates in Tiddlyhost|https://tiddlyhost.com/hub?t=1]].
+    * Dec 22, 2022 - [[New git repo|https://github.com/simonbaird/tw5-mptw]] with scripted builds and updates
+    * Nov 24, 2022 - Rainbow site titles
+    * Nov 21, 2022 - Don't remember sidebar tab state when saving
+    * Nov 20, 2022 - Show description in the tagging list, hide the default tag buttons
+    * Nov 19, 2022 - Created first version to help demo [[templates in Tiddlyhost|https://tiddlyhost.com/hub?t=1]]
 
-    (TiddlyWiki version <<version>>)
+    (TiddlyWiki version: <<version>>)
   tags: Home
   title: About MPTW5
   color: '#abc38d'
