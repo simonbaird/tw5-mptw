@@ -88,12 +88,13 @@ core-file: $(MPTW_OUTPUT)/tiddlywikicore-$(TW_VER).js
 rendertiddler_mptw5=$$:/core/save/all
 rendertiddler_mptw5x=$$:/core/save/offline-external-js
 
-build-%: $(MPTW_OUTPUT)/content.json $(MPTW_OUTPUT)/config.json core-file
+build-%: $(MPTW_OUTPUT)/content.json $(MPTW_OUTPUT)/config.json $(MPTW_OUTPUT)/%.json core-file
 	@cd $(TW5_DIR) && \
 	git reset --hard --quiet && git checkout --quiet v$(TW_VER) && \
 	node tiddlywiki.js editions/empty \
 	  --load $(MPTW_OUTPUT)/content.json \
 	  --load $(MPTW_OUTPUT)/config.json \
+	  --load $(MPTW_OUTPUT)/$*.json \
 	  --output $(TW5_OUTPUT) \
 	  --rendertiddler '$(rendertiddler_$*)' '$*.html' 'text/plain' && \
 	cp $(TW5_OUTPUT)/$*.html $(MPTW_OUTPUT)/$*.html && \
