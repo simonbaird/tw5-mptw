@@ -111,3 +111,16 @@ preview-%:
 preview: preview-mptw5 preview-mptw5x
 
 build-preview: clean build preview
+
+# Use the script in the tiddlyhost examples directory for uploading
+TH_DIR=../tiddlyhost
+UPLOADER=$(TH_DIR)/examples/thost-uploader
+BACKUPS_DIR=$(MPTW_DIR)/backups
+upload-%:
+	@env DOWNLOAD_DIR=$(BACKUPS_DIR) $(UPLOADER) $* $(MPTW_OUTPUT)/$*.html $(TH_LOGIN) $$(cat $(TH_PASS_FILE))
+
+# Example usage:
+#   TH_LOGIN=simon.baird@gmail.com TH_PASS_FILE=~/.thostpass make upload
+upload: upload-mptw5 upload-mptw5x
+
+build-upload: clean build upload
