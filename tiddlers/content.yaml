@@ -80,6 +80,7 @@
 
     !! Changelog
 
+    * Apr 05, 2023 - Added the [[DownloadButton|$:/Mptw5/DownloadButton]]
     * Dec 22, 2022 - [[New git repo|https://github.com/simonbaird/tw5-mptw]] with scripted builds and updates
     * Nov 24, 2022 - Rainbow site titles
     * Nov 21, 2022 - Don't remember sidebar tab state when saving
@@ -90,3 +91,32 @@
   tags: Home
   title: About MPTW5
   color: '#abc38d'
+- title: $:/Mptw5/DownloadButton
+  tags: $:/tags/PageControls [[About MPTW5]]
+  list-after: $:/core/ui/Buttons/save-wiki
+  description: Similar to the save changes button but it always downloads
+  text: |-
+    <!--
+      This button is similar to the save button, but it will always download a
+      copy of the entire TiddlyWiki, even if another save method is available.
+      This is useful on Tiddlyhost when you want to download, since the regular
+      save button will always do a save to Tiddlyhost. Unlike the regular save
+      button, it doesn't show any indication when a save is needed.
+
+      Todo in future maybe:
+      - Suppress or change the "Saved wiki" notification
+      - Make it so the strings can be translated
+      - Propose adding it to the core TiddlyWiki5
+
+    -->
+    \whitespace trim
+    <$button class=<<tv-config-toolbar-class>> message="tm-download-file"
+      tooltip="Download to a local file" aria-label="download a copy">
+      <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+        {{$:/core/images/download-button}}
+      </$list>
+      <$list filter="[<tv-config-toolbar-text>match[yes]]">
+        <span class="tc-btn-text"><$text text="download a copy"/></span>
+      </$list>
+    </$button>
+  code-body: "yes"

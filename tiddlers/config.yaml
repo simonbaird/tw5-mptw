@@ -6,6 +6,8 @@
   title: $:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager
 - text: show
   title: $:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions
+- text: hide
+  title: $:/config/PageControlButtons/Visibility/$:/Mptw5/DownloadButton
 - text: "yes"
   title: $:/config/RelinkOnRename
 - text: show
