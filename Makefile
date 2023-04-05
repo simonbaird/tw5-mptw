@@ -73,7 +73,7 @@ $(MPTW_OUTPUT):
 $(MPTW_OUTPUT)/%.json: tiddlers/%.yaml $(MPTW_OUTPUT)
 	@yq -o json < $< > $@
 
-TW_VER=5.2.5
+TW_VER=5.2.7
 
 $(MPTW_OUTPUT)/tiddlywikicore-$(TW_VER).js:
 	@cd $(MPTW_OUTPUT) && \
