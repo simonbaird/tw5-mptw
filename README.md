@@ -8,5 +8,5 @@ You can preview and use MPTW5 on
 [Tiddlyhost](https://tiddlyhost.com/hub/user/Simon?t=1). Click the "Clone"
 button to create a Tiddlyhost site using one of the MPTW5 template.
 
-See the [About MPTW5](https://mptw5x.tiddlyhost.com/#About%20MPTW5) page for
+See the [MPTW5](https://mptw5x.tiddlyhost.com/#MPTW5) page for
 more information about MPTW5.

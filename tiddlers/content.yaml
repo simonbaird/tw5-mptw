@@ -12,7 +12,7 @@
       in this filter and then save, so be careful here.
     -->
     \define publishFilter() -[prefix[$:/state/tab/sidebar]] -[prefix[$:/state/tab/moresidebar]]
-  tags: $:/tags/Macro [[About MPTW5]]
+  tags: $:/tags/Macro MPTW5
   description: Don't remember the sidebar tab state
   code-body: "yes"
 
@@ -58,7 +58,7 @@
       display: inline-block; /* Limit the width of the element so the gradient looks good */
     }
 
-  tags: '[[About MPTW5]] $:/tags/Stylesheet'
+  tags: MPTW5 $:/tags/Stylesheet
   description: Hide the default tag buttons
   code-body: "yes"
 
@@ -89,7 +89,7 @@
         </$list>
       </ul>
     </$reveal>
-  tags: $:/tags/ViewTemplate [[About MPTW5]]
+  tags: $:/tags/ViewTemplate MPTW5
   type: text/vnd.tiddlywiki
   description: Adds a "tagging" list to each tiddler in view mode
   code-body: "yes"
@@ -106,12 +106,12 @@
         <$link /> &nbsp;
       </$list>
     </$reveal>
-  tags: $:/tags/ViewTemplate [[About MPTW5]]
+  tags: $:/tags/ViewTemplate MPTW5
   list-before: $:/core/ui/ViewTemplate/title
   description: Adds clickable tag links above the title in view mode
   code-body: "yes"
 
-- title: About MPTW5
+- title: MPTW5
   text: |-
     !! About
 
@@ -123,7 +123,7 @@
 
     The "Tagging" list below shows a list of the substantial customizations,
     and serves as a quick demo of how MPTW5 works. Notice each tiddler in that
-    list is tagged with "About MPTW5", which is what makes it appear there.
+    list is tagged with "MPTW5", which is what makes it appear there.
 
     As well as the layout customizations there are some config changes, in
     particular to disable CamelCase linking, select my preferred tools, toolbar
@@ -197,7 +197,7 @@
         <span class="tc-btn-text"><$text text="download a copy"/></span>
       </$list>
     </$button>
-  tags: $:/tags/PageControls [[About MPTW5]]
+  tags: $:/tags/PageControls MPTW5
   list-after: $:/core/ui/Buttons/save-wiki
   description: Similar to the save changes button but it always downloads
   code-body: "yes"
