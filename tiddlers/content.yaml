@@ -113,6 +113,8 @@
 
 - title: About MPTW5
   text: |-
+    !! About
+
     MPTW5 is created and maintained by [[Simon Baird|http://simonbaird.com/]]
     and is the spiritual successor to [[MPTW|http://mptw.tiddlyspot.com/]]. It
     began as a way to demonstrate the new [[templates feature|https://tiddlyhost.com/hub?t=1]]
@@ -147,7 +149,15 @@
     * Nov 20, 2022 - Show description in the tagging list, hide the default tag buttons
     * Nov 19, 2022 - Created first version to help demo [[templates in Tiddlyhost|https://tiddlyhost.com/hub?t=1]]
 
-    (TiddlyWiki version: <<version>>)
+    !! Versions
+
+    * MPTW5 version: {{$:/Mptw5/Version}}
+    * TiddlyWiki version: <<version>>
+
+    !! Source
+
+    * https://github.com/simonbaird/tw5-mptw
+
   tags: Home
   color: '#abc38d'
 

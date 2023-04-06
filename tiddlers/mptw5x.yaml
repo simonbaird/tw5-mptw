@@ -1,2 +1,5 @@
 - title: $:/palette
   text: $:/palettes/Nord
+
+- title: $:/Mptw5/Version
+  text: __MPTW5_VERSION__ (external core)
