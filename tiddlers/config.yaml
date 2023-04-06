@@ -1,24 +1,27 @@
-- title: $:/config/DefaultSidebarTab
-  text: $:/core/ui/SideBar/Recent
-- text: show
-  title: $:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home
-- text: show
-  title: $:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager
-- text: show
-  title: $:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions
-- text: hide
-  title: $:/config/PageControlButtons/Visibility/$:/Mptw5/DownloadButton
-- text: "yes"
-  title: $:/config/RelinkOnRename
-- text: show
-  title: $:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close-others
-- text: show
-  title: $:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/new-here
-- text: disable
-  title: $:/config/WikiParserRules/Inline/wikilink
-- title: $:/DefaultTiddlers
-  text: Home
 - title: $:/SiteTitle
   text: My TiddlyWiki
+- title: $:/DefaultTiddlers
+  text: Home
+
+- title: $:/config/DefaultSidebarTab
+  text: $:/core/ui/SideBar/Recent
+- title: $:/config/RelinkOnRename
+  text: "yes"
+- title: $:/config/WikiParserRules/Inline/wikilink
+  text: disable
 - title: $:/themes/tiddlywiki/vanilla/options/codewrapping
   text: pre
+
+- title: $:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home
+  text: show
+- title: $:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager
+  text: show
+- title: $:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions
+  text: show
+- title: $:/config/PageControlButtons/Visibility/$:/Mptw5/DownloadButton
+  text: hide
+
+- title: $:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close-others
+  text: show
+- title: $:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/new-here
+  text: show

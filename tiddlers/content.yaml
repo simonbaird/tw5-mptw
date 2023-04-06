@@ -1,4 +1,5 @@
-- text: |-
+- title: $:/Mptw5/StatelessSidebar
+  text: |-
     <!--
       I prefer having the sidebar tabs reset to their defaults every time
       rather than remember their state on save, particularly when you have the
@@ -12,15 +13,57 @@
     -->
     \define publishFilter() -[prefix[$:/state/tab/sidebar]] -[prefix[$:/state/tab/moresidebar]]
   tags: $:/tags/Macro [[About MPTW5]]
-  title: $:/Mptw5/StatelessSidebar
   description: Don't remember the sidebar tab state
   code-body: "yes"
-- text: "/*\n  I like to just use the tag links from $:/Mptw5/TagLinks, so\n  hide the default tag buttons with their pills and drop downs.\n  Remove this if you want the tag pills back.\n*/\n.tc-tags-wrapper {\n  display: none;\n}\n\n/*\n  The default font size for code blocks is too large.\n  Also add horizontal scrolling when it's needed.\n*/\n.tc-tiddler-body pre {\n  overflow-x: auto;\n  font-size: 80%;\n  padding: 0.5em;\n  padding-bottom: 1em;\n}\n\n/*\n  Smaller buttons\n*/\n.tc-tiddler-controls button {\n  font-size: 90%;\n}\n\n/*\n  Rainbow title because why not.\n  CSS borrowed from http://neotw.tiddlyhost.com/\n  Delete this if you don't like it or it looks bad with your\n  color scheme.\n*/\n.tc-sidebar-header .tc-site-title {\n  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);\n  -webkit-background-clip: text;\n  color: transparent !important;\n  display: inline-block; /* Limit the width of the element so the gradient looks good */  \n}"
+
+- title: $:/Mptw5/StyleSheet
+  text: |-
+    /*
+      I like to just use the tag links from $:/Mptw5/TagLinks, so
+      hide the default tag buttons with their pills and drop downs.
+      Remove this if you want the tag pills back.
+    */
+    .tc-tags-wrapper {
+      display: none;
+    }
+
+    /*
+      The default font size for code blocks is too large.
+      Also add horizontal scrolling when it's needed.
+    */
+    .tc-tiddler-body pre {
+      overflow-x: auto;
+      font-size: 80%;
+      padding: 0.5em;
+      padding-bottom: 1em;
+    }
+
+    /*
+      Smaller buttons
+    */
+    .tc-tiddler-controls button {
+      font-size: 90%;
+    }
+
+    /*
+      Rainbow title because why not.
+      CSS borrowed from http://neotw.tiddlyhost.com/
+      Delete this if you don't like it or it looks bad with your
+      color scheme.
+    */
+    .tc-sidebar-header .tc-site-title {
+      background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+      -webkit-background-clip: text;
+      color: transparent !important;
+      display: inline-block; /* Limit the width of the element so the gradient looks good */
+    }
+
   tags: '[[About MPTW5]] $:/tags/Stylesheet'
-  title: $:/Mptw5/StyleSheet
   description: Hide the default tag buttons
   code-body: "yes"
-- text: |-
+
+- title: $:/Mptw5/TaggingList
+  text: |-
     <!--
       This should be tagged with $:/tags/ViewTemplate so it is included in the
       layout for every tiddler. Its purpose is to always show a list of tiddlers that
@@ -47,13 +90,14 @@
       </ul>
     </$reveal>
   tags: $:/tags/ViewTemplate [[About MPTW5]]
-  title: $:/Mptw5/TaggingList
   type: text/vnd.tiddlywiki
   description: Adds a "tagging" list to each tiddler in view mode
   code-body: "yes"
-- text: |-
+
+- title: $:/Mptw5/TagLinks
+  text: |-
     <!--
-      Add links to the tiddlers tags above the title.
+      Add links to the tiddler's tags above the title.
       The links just take you to the tag's tiddler.
     -->
     <$reveal type="nomatch" stateTitle="<<folded-state>>" text="hide" tag="div"
@@ -62,21 +106,37 @@
         <$link /> &nbsp;
       </$list>
     </$reveal>
-  title: $:/Mptw5/TagLinks
   tags: $:/tags/ViewTemplate [[About MPTW5]]
   list-before: $:/core/ui/ViewTemplate/title
   description: Adds clickable tag links above the title in view mode
   code-body: "yes"
-- text: |-
-    MPTW5 is created and maintained by [[Simon Baird|http://simonbaird.com/]] and is the spiritual successor to [[MPTW|http://mptw.tiddlyspot.com/]]. It began as a way to demonstrate the new [[templates feature|https://tiddlyhost.com/hub?t=1]] on [[Tiddlyhost|https://tiddlyhost.com]], but now it has its own life as a way to share my preferred TiddlyWiki setup.
 
-    The "Tagging" list below shows a list of the substantial customizations, and serves as a quick demo of how MPTW5 works. Notice each tiddler in that list is tagged with "About MPTW5", which is what makes it appear there.
+- title: About MPTW5
+  text: |-
+    MPTW5 is created and maintained by [[Simon Baird|http://simonbaird.com/]]
+    and is the spiritual successor to [[MPTW|http://mptw.tiddlyspot.com/]]. It
+    began as a way to demonstrate the new [[templates feature|https://tiddlyhost.com/hub?t=1]]
+    on [[Tiddlyhost|https://tiddlyhost.com]], but now it has its own life as a place
+    to share my preferred TiddlyWiki setup.
 
-    As well as the layout customizations there are some config changes, in particular to disable CamelCase linking, select my preferred tools, toolbar items, and palette. You can adjust this configuration to suit your own preference in the [[ControlPanel|$:/ControlPanel]]. See also [[GettingStarted]] for some other basic configuration options.
+    The "Tagging" list below shows a list of the substantial customizations,
+    and serves as a quick demo of how MPTW5 works. Notice each tiddler in that
+    list is tagged with "About MPTW5", which is what makes it appear there.
 
-    One thing I do recommend is to keep the "new here" button in your Tiddler view toolbar. The main idea behind MPTW5 is that tagging lists help you maintain your content in an easy to navigate, hierarchical structure based on tags. This makes the "new here" button work as a kind of "create child page" function.
+    As well as the layout customizations there are some config changes, in
+    particular to disable CamelCase linking, select my preferred tools, toolbar
+    items, and palette. You can adjust this configuration to suit your own
+    preference in the [[ControlPanel|$:/ControlPanel]]. See also
+    [[GettingStarted]] for some other basic configuration options.
 
-    (If you use this template for your own TiddlyWiki feel free to delete this tiddler.)
+    One thing I do recommend is to keep the "new here" button in your Tiddler
+    view toolbar. The main idea behind MPTW5 is that tagging lists help you
+    maintain your content in an easy to navigate, hierarchical structure based
+    on tags. This makes the "new here" button work as a kind of "create child
+    page" function.
+
+    (If you use this template for your own TiddlyWiki feel free to delete this
+    tiddler.)
 
     !! Changelog
 
@@ -89,12 +149,9 @@
 
     (TiddlyWiki version: <<version>>)
   tags: Home
-  title: About MPTW5
   color: '#abc38d'
+
 - title: $:/Mptw5/DownloadButton
-  tags: $:/tags/PageControls [[About MPTW5]]
-  list-after: $:/core/ui/Buttons/save-wiki
-  description: Similar to the save changes button but it always downloads
   text: |-
     <!--
       This button is similar to the save button, but it will always download a
@@ -119,4 +176,7 @@
         <span class="tc-btn-text"><$text text="download a copy"/></span>
       </$list>
     </$button>
+  tags: $:/tags/PageControls [[About MPTW5]]
+  list-after: $:/core/ui/Buttons/save-wiki
+  description: Similar to the save changes button but it always downloads
   code-body: "yes"
