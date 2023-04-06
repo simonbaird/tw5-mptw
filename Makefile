@@ -1,62 +1,6 @@
 MAKEFLAGS += --silent
 
 ##-----------------------------------------------
-## Exporting from Tiddlyhost
-##
-
-# Lists of tiddlers that are considered relevant.
-#
-# The foreach uses space as the delimiter so for tiddlers with
-# a space so the + char is a clunky workaround for tiddlers with
-# a space in their name. See the jq 'sub' below.
-#
-define content_tiddlers
-  About+MPTW5
-  $$:/Mptw5/StatelessSidebar
-  $$:/Mptw5/StyleSheet
-  $$:/Mptw5/TaggingList
-  $$:/Mptw5/TagLinks
-endef
-
-define config_tiddlers
-  $$:/DefaultTiddlers
-  $$:/SiteTitle
-  $$:/palette
-  $$:/themes/tiddlywiki/vanilla/options/codewrapping
-
-  $$:/config/DefaultSidebarTab
-  $$:/config/WikiParserRules/Inline/wikilink
-  $$:/config/RelinkOnRename
-
-  $$:/config/PageControlButtons/Visibility/$$:/core/ui/Buttons/home
-  $$:/config/PageControlButtons/Visibility/$$:/core/ui/Buttons/manager
-  $$:/config/PageControlButtons/Visibility/$$:/core/ui/Buttons/more-page-actions
-  $$:/config/ViewToolbarButtons/Visibility/$$:/core/ui/Buttons/close-others
-  $$:/config/ViewToolbarButtons/Visibility/$$:/core/ui/Buttons/new-here
-endef
-
-SOURCE_SITE=mptw5
-SOURCE_URL=https://$(SOURCE_SITE).tiddlyhost.com/tiddlers.json?include_system=1
-
-# I don't want to keep these fields
-JQ_DEL_FIELDS=del(.modified,.modifier,.created,.creator)
-
-# Some fun Makefile and jq tricks here
-JQ_SELECT=$(foreach title,$($1),or (.title|sub(" "; "+"))=="$(title)")
-
-# Fetch from the existing site and dump the listed tiddlers into a yaml file
-# which should be nicer than json to maintain, though .tid and .multids files
-# would probably be better (todo).
-#
-extract-%:
-	@curl -s $(SOURCE_URL) | \
-	  jq '[ .[] | select(false $(call JQ_SELECT,$*_tiddlers)) | $(JQ_DEL_FIELDS) ]' | \
-	  yq -P > tiddlers/$*.yaml && \
-	echo Wrote tiddlers from $(SOURCE_SITE) to tiddlers/$*.yaml
-
-extract: extract-config extract-content
-
-##-----------------------------------------------
 ## Building empties
 ##
 
