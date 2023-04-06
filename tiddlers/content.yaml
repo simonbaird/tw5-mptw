@@ -140,6 +140,17 @@
     (If you use this template for your own TiddlyWiki feel free to delete this
     tiddler.)
 
+    !! Cloning on Tiddlyhost
+
+    If you have an account on [[Tiddlyhost|https://tiddlyhost.com]] you can clone
+    this TiddlyWiki using one of these links:
+
+    * [[Clone MPTW5 (internal core)|https://tiddlyhost.com/sites/new?clone=mptw5]]
+    * [[Clone MPTW5 (external core)|https://tiddlyhost.com/sites/new?clone=mptw5x]]
+
+    See [[here|https://github.com/simonbaird/tiddlyhost/wiki/About-external-core-and-internal-core-TiddlyWiki]]
+    for information on the difference between internal and external core.
+
     !! Changelog
 
     * Apr 05, 2023 - Added the [[DownloadButton|$:/Mptw5/DownloadButton]]
