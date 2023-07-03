@@ -68,7 +68,7 @@
       This should be tagged with $:/tags/ViewTemplate so it is included in the
       layout for every tiddler. Its purpose is to always show a list of tiddlers that
       are tagged with this tiddler at the bottom of the tiddler view. It's inspired by
-      the old MPTW, see at http://mptw.tiddlyspot.com/ .
+      the old MPTW, see http://mptw.tiddlyspot.com/ .
 
       This pairs well with the "new here" button and the "new journal here" button
       which can be enabled in the Appearance/Toolbars section of the Control Panel.
@@ -184,7 +184,7 @@
       Todo in future maybe:
       - Suppress or change the "Saved wiki" notification
       - Make it so the strings can be translated
-      - Propose adding it to the core TiddlyWiki5
+      - Propose adding it to TiddlyWiki5
 
     -->
     \whitespace trim
