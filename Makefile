@@ -20,7 +20,7 @@ BUILD_VERSION=1.$(shell git rev-list --count HEAD)-$(shell git log -n1 --format=
 $(MPTW_OUTPUT)/%.json: tiddlers/%.yaml $(MPTW_OUTPUT)
 	@cat $< | yq -o json | sed 's/__MPTW5_VERSION__/$(BUILD_VERSION)/' > $@
 
-TW_VER=5.3.3
+TW_VER=5.3.5
 
 $(MPTW_OUTPUT)/tiddlywikicore-$(TW_VER).js:
 	@cd $(MPTW_OUTPUT) && \
