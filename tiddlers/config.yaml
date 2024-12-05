@@ -25,3 +25,20 @@
   text: show
 - title: $:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/new-here
   text: show
+
+# Disable some color schemes I don't think are very good.
+# Override the palette shadow tiddlers with empty tiddlers.
+- title: $:/palettes/Blanca
+- title: $:/palettes/Blue
+- title: $:/palettes/BrightMute
+- title: $:/palettes/ContrastDark
+- title: $:/palettes/ContrastLight
+- title: $:/palettes/DarkPhotos
+- title: $:/palettes/DesertSand
+- title: $:/palettes/Muted
+- title: $:/palettes/Rocker
+- title: $:/palettes/SolarFlare
+- title: $:/palettes/SpartanDay
+- title: $:/palettes/SpartanNight
+- title: $:/palettes/Twilight
+- title: $:/palettes/Vanilla

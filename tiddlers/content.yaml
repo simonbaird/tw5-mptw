@@ -153,6 +153,7 @@
 
     !! Changelog
 
+    * Dec 05, 2024 - Disable some color schemes
     * Apr 05, 2023 - Added the [[DownloadButton|$:/Mptw5/DownloadButton]]
     * Dec 22, 2022 - [[New git repo|https://github.com/simonbaird/tw5-mptw]] with scripted builds and updates
     * Nov 24, 2022 - Rainbow site titles
