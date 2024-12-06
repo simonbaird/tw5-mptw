@@ -3,7 +3,7 @@
     <small>
     MPTW5 version: ''{{$:/Mptw5/Version}}''<br>
     TiddlyWiki version: ''<<version>>''<br>
-    Built: ''<$view field="modified" format="relativedate"/>''
+    Built: ''<$view field="modified" format="date" template="DDth MMM YYYY"/>''
     </small>
 
     !! About
