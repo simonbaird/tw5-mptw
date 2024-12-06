@@ -179,7 +179,6 @@
     * Click <big><$let tv-config-toolbar-icons="yes" tv-config-toolbar-text="yes">{{$:/core/ui/Buttons/save-wiki}}</$let></big> and confirm you can save
     * Learn more about [[MPTW5]] and [[TiddlyWiki|https://tiddlywiki.com/]]
   tags: Home
-  color: '#abc38d'
 
 - title: $:/Mptw5/DownloadButton
   text: |-
