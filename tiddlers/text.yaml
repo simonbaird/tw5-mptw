@@ -1,0 +1,71 @@
+- title: MPTW5
+  text: |-
+    <small>
+    MPTW5 version: ''{{$:/Mptw5/Version}}''<br>
+    TiddlyWiki version: ''<<version>>''<br>
+    Built: ''<$view field="modified" format="relativedate"/>''
+    </small>
+
+    !! About
+
+    MPTW5 is a lightly customized "edition" of TiddlyWiki. The "Tagging" list
+    below shows a list of the substantial tweaks and customizations, and serves
+    as a quick demo of how MPTW5 works. Notice each tiddler in that list is
+    tagged with "MPTW5", which is what makes it appear in the "Tagging" list.
+
+    MPTW5 is created and maintained by [[Simon Baird|http://simonbaird.com/]],
+    and is the spiritual successor to [[MPTW|http://mptw.tiddlyspot.com/]].
+
+    !! Configuration
+
+    As well as the layout customizations there are some config changes, in
+    particular to disable CamelCase linking, and to select my preferred tools,
+    toolbar items, and color scheme.
+
+    You can adjust this configuration to suit your preferences in the
+    [[ControlPanel|$:/ControlPanel]]. You can also click
+    <span style="font-size:150%;">{{$:/core/ui/Buttons/palette}}</span>
+    to try different color schemes. See [[GettingStarted]] for some other
+    basic configuration options.
+
+    It is recommended to keep the "new here" button in your Tiddler view toolbar.
+    Onw of the key MPTW5 concepts is that tagging lists help you maintain your content
+    in an easy to navigate, hierarchical structure based on tags. This makes the
+    "new here" button work as a kind of "create child page" function.
+
+    !! Cloning on Tiddlyhost
+
+    If you have an account on [[Tiddlyhost|https://tiddlyhost.com]] you can clone
+    this TiddlyWiki using one of these links:
+
+    * [[Clone MPTW5 (internal core)|https://tiddlyhost.com/sites/new?clone=mptw5]]
+    * [[Clone MPTW5 (external core)|https://tiddlyhost.com/sites/new?clone=mptw5x]]
+
+    See [[here|https://github.com/simonbaird/tiddlyhost/wiki/About-external-core-and-internal-core-TiddlyWiki]]
+    for information on the difference between internal and external core.
+
+    !! Changelog
+
+    * Dec 06, 2024 - Add the [[Start Here]] tiddler
+    * Dec 05, 2024 - Disable some color schemes
+    * Apr 05, 2023 - Add the [[DownloadButton|$:/Mptw5/DownloadButton]]
+    * Dec 22, 2022 - [[New git repo|https://github.com/simonbaird/tw5-mptw]] with scripted builds and updates
+    * Nov 24, 2022 - Rainbow site titles
+    * Nov 21, 2022 - Don't remember sidebar tab state when saving
+    * Nov 20, 2022 - Show description in the tagging list, hide the default tag buttons
+    * Nov 19, 2022 - Create first version to help demo [[templates in Tiddlyhost|https://tiddlyhost.com/hub?t=1]]
+
+    !! Source
+
+    * https://github.com/simonbaird/tw5-mptw
+  modified: __MPTW5_MODIFIED__
+
+- title: Start Here
+  text: |-
+    * Set a title and subtitle at [[GettingStarted]]
+    * Click <big><$let tv-config-toolbar-icons="yes" tv-config-toolbar-text="yes">{{$:/core/ui/Buttons/palette}}</$let></big> to choose a color scheme
+    * Click <big><$button class="tc-btn-invisible"><$action-sendmessage $message="tm-new-tiddler" tags="Home" />{{$:/core/images/new-here-button}} {{$:/language/Buttons/NewHere/Caption}}</$button></big> to create a tiddler under [[Home]]
+    * Click <big><$let tv-config-toolbar-icons="yes" tv-config-toolbar-text="yes">{{$:/core/ui/Buttons/save-wiki}}</$let></big> and confirm you can save
+    * Learn more about [[MPTW5]] and [[TiddlyWiki|https://tiddlywiki.com/]]
+  tags: Home
+  modified: __MPTW5_MODIFIED__
