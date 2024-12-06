@@ -153,6 +153,7 @@
 
     !! Changelog
 
+    * Dec 06, 2024 - Add the [[Start Here]] tiddler
     * Dec 05, 2024 - Disable some color schemes
     * Apr 05, 2023 - Add the [[DownloadButton|$:/Mptw5/DownloadButton]]
     * Dec 22, 2022 - [[New git repo|https://github.com/simonbaird/tw5-mptw]] with scripted builds and updates
@@ -170,6 +171,13 @@
 
     * https://github.com/simonbaird/tw5-mptw
 
+- title: Start Here
+  text: |-
+    * Set a title and subtitle at [[GettingStarted]]
+    * Click <big><$let tv-config-toolbar-icons="yes" tv-config-toolbar-text="yes">{{$:/core/ui/Buttons/palette}}</$let></big> to choose a color scheme
+    * Click <big><$button class="tc-btn-invisible"><$action-sendmessage $message="tm-new-tiddler" tags="Home" />{{$:/core/images/new-here-button}} {{$:/language/Buttons/NewHere/Caption}}</$button></big> to create a tiddler under [[Home]]
+    * Click <big><$let tv-config-toolbar-icons="yes" tv-config-toolbar-text="yes">{{$:/core/ui/Buttons/save-wiki}}</$let></big> and confirm you can save
+    * Learn more about [[MPTW5]] and [[TiddlyWiki|https://tiddlywiki.com/]]
   tags: Home
   color: '#abc38d'
 
