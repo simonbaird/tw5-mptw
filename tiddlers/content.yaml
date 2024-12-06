@@ -113,6 +113,9 @@
 
 - title: MPTW5
   text: |-
+    <small>MPTW5 version: ''{{$:/Mptw5/Version}}''<br>
+    TiddlyWiki version: ''<<version>>''</small>
+
     !! About
 
     MPTW5 is a lightly customized "edition" of TiddlyWiki. The "Tagging" list
@@ -161,11 +164,6 @@
     * Nov 21, 2022 - Don't remember sidebar tab state when saving
     * Nov 20, 2022 - Show description in the tagging list, hide the default tag buttons
     * Nov 19, 2022 - Create first version to help demo [[templates in Tiddlyhost|https://tiddlyhost.com/hub?t=1]]
-
-    !! Versions
-
-    * MPTW5 version: {{$:/Mptw5/Version}}
-    * TiddlyWiki version: <<version>>
 
     !! Source
 
