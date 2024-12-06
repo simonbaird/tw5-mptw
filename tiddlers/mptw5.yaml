@@ -1,5 +1,2 @@
-- title: $:/palette
-  text: $:/palettes/GruvboxDark
-
 - title: $:/Mptw5/Version
   text: __MPTW5_VERSION__ (internal core)

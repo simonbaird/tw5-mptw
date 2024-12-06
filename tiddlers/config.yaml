@@ -3,6 +3,9 @@
 - title: $:/DefaultTiddlers
   text: Home
 
+- title: $:/palette
+  text: $:/palettes/FlexokiLight
+
 - title: $:/config/DefaultSidebarTab
   text: $:/core/ui/SideBar/Recent
 - title: $:/config/RelinkOnRename
