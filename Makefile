@@ -14,7 +14,7 @@ $(MPTW_OUTPUT):
 	@mkdir -p $(MPTW_OUTPUT)
 
 BUILD_VERSION=1.$(shell git rev-list --count HEAD)-$(shell git log -n1 --format=%h | head -c5 )
-BUILD_TIMESTAMP=$(shell date -u +'%Y%m%d%H%M%S000')
+BUILD_TIMESTAMP=$(shell date -u +'%Y%m%d%H%M%S%N' | head -c 17 )
 
 # Convert back to json so TiddlyWiki can use it when building
 # and also apply some quick and dirty text replacement
