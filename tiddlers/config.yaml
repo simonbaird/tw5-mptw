@@ -45,3 +45,6 @@
 - title: $:/palettes/SpartanNight
 - title: $:/palettes/Twilight
 - title: $:/palettes/Vanilla
+
+- title: $:/Mptw5/BuildTimestamp
+  text: __MPTW5_BUILD_TIMESTAMP__

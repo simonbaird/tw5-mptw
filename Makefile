@@ -14,14 +14,14 @@ $(MPTW_OUTPUT):
 	@mkdir -p $(MPTW_OUTPUT)
 
 BUILD_VERSION=1.$(shell git rev-list --count HEAD)-$(shell git log -n1 --format=%h | head -c5 )
-MODIFIED=$(shell date -u +'%Y%m%d%H%M%S000')
+BUILD_TIMESTAMP=$(shell date -u +'%Y%m%d%H%M%S000')
 
 # Convert back to json so TiddlyWiki can use it when building
 # and also apply some quick and dirty text replacement
 $(MPTW_OUTPUT)/%.json: tiddlers/%.yaml $(MPTW_OUTPUT)
 	@cat $< | yq -o json \
 	  | sed 's/__MPTW5_VERSION__/$(BUILD_VERSION)/' \
-	  | sed 's/__MPTW5_MODIFIED__/$(MODIFIED)/' \
+	  | sed 's/__MPTW5_BUILD_TIMESTAMP__/$(BUILD_TIMESTAMP)/' \
 	  > $@
 
 TW_VER=5.3.6

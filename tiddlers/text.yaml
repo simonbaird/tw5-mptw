@@ -3,7 +3,7 @@
     <small>
     MPTW5 version: ''{{$:/Mptw5/Version}}''<br>
     TiddlyWiki version: ''<<version>>''<br>
-    Built: ''<$view field="modified" format="date" template="DDth MMM YYYY"/>''
+    Built: ''<$view tiddler="$:/Mptw5/BuildTimestamp" format="date" template="DDth MMM YYYY"/>''
     </small>
 
     !! About
@@ -58,7 +58,7 @@
     !! Source
 
     * https://github.com/simonbaird/tw5-mptw
-  modified: __MPTW5_MODIFIED__
+  modified: __MPTW5_BUILD_TIMESTAMP__
 
 - title: Start Here
   text: |-
@@ -69,4 +69,4 @@
     * Learn more about [[MPTW5]] and [[TiddlyWiki|https://tiddlywiki.com/]]
     * (Optional) Delete the [[Start Here]] and [[MPTW5]] tiddlers
   tags: Home
-  modified: __MPTW5_MODIFIED__
+  modified: __MPTW5_BUILD_TIMESTAMP__
