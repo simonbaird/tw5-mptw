@@ -1,9 +1,9 @@
 - title: MPTW5
   text: |-
     <small>
-    MPTW5 version: ''{{$:/Mptw5/Version}}''<br>
-    TiddlyWiki version: ''<<version>>''<br>
-    Built: ''<$view tiddler="$:/Mptw5/BuildTimestamp" format="date" template="DDth MMM YYYY"/>''
+    MPTW5 version: ''{{$:/Mptw5/Version}}'',
+    <$view tiddler="$:/Mptw5/BuildTimestamp" format="date" template="DD mmm YY"/><br>
+    TiddlyWiki version: ''<<version>>''
     </small>
 
     !! About
